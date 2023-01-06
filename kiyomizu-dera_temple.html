@@ -99,7 +99,7 @@
     <!-- footer section end  -->
 
     <script>
-        fetch("../header.html")
+        fetch("header.html")
             .then(response => {
                 return response.text()
             })
@@ -107,7 +107,7 @@
                 document.querySelector("header").innerHTML = data;
             });
 
-        fetch("../footer.html")
+        fetch("footer.html")
             .then(response => {
                 return response.text()
             })
