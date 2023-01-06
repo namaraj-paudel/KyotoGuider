@@ -1,0 +1,81 @@
+.cover_image {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.cover_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cover_image .content {
+  font-size: 4rem;
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  opacity: 0.85;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.details .container img {
+  height: 300px;
+  width: 500px;
+  padding: 0 10px;
+  float: right;
+}
+
+.details .container h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+  text-transform: none;
+}
+
+.details .container p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 10px 10px;
+  text-transform: none;
+
+}
+
+.details .gallery {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  display: inline-flex;
+  overflow-x: scroll;
+}
+
+.details .gallery img {
+  width: 300px;
+  height: 200px;
+}
+
+.details .map iframe{
+  width: 100%;
+  height: 500px;
+}
+
+.booknow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.booknow a {
+  padding: 5px 100px;
+}

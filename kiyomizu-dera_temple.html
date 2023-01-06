@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Kiyomizu-dera Temple</h4>
+            <img src="images/kiyomizu-dera-temple.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>In the east part of Kyoto, the Kiyomizu-dera Temple, an important UNESCO World Heritage Site, lies in a
+                picturesque location on Otowa Mountain overlooking the city. Visitors can enjoy a delightful stroll to
+                the temple along quaint Tea-pot Lane with its small shops and craft stores. <br><br>
+
+                This beautiful temple was founded in AD 790 and dedicated to the 11-headed Kannon, the Buddhist Goddess
+                of Mercy whose statue can be seen here. The existing buildings were erected after 1633 in the period of
+                the third Tokugawa Shogun, Iemitsu, and stand mainly on a rocky outcrop high above the Otowa Waterfall.
+                <br><br>
+
+                Highlights include the large terrace of the Main Hall, built on 30-meter-tall pillars with five rows of
+                cross-beams and used as a stage for temple dances and ceremonies. The terrace affords spectacular views
+                over the city and the surrounding wooded hills, especially when the leaves change color in fall.
+                Personalized English language guided tours are available.
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/kiyomizu-dera-temple 1.jpg" alt="">
+                <img src="images/kiyomizu-dera-temple 2.jpg" alt="">
+                <img src="images/kiyomizu-dera-temple 3.jpg" alt="">
+                <img src="images/kiyomizu-dera-temple 4.jpg" alt="">
+                <img src="images/kiyomizu-dera-temple 5.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t_KrTJSj1Kw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TWXTrY_RcBs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.4732749241184!2d135.78285761524015!3d34.99485608036003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108d385dcfb07%3A0x62af658650c434ba!2sKiyomizu-dera!5e0!3m2!1sen!2sjp!4v1672982518102!5m2!1sen!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("../header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("../footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
