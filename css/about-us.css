@@ -112,3 +112,24 @@
 .social-links a:hover {
   color: #0c52a1;
 }
+
+.team p{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.team .role {
+  display: flex;
+  justify-content: start;
+  margin-left: 50px;
+  gap: 400px;
+}
+
+.team .role h2{
+  font-size: 15px;
+
+}
+
+.team .role p {
+  margin-left: 10px;
+}
