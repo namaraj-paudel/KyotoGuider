@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/how_to.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image2.jpg">
+        <div class="content">
+            <h3>Visit your favourite places</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <!-- about us section starts  -->
+    <section class="about-us" id="about-us">
+        <h1 class="heading">
+            <div> How To Use/Manage The Followings</div>
+        </h1>
+        <div class="main">
+            <div class="profile-card">
+                <a href="/index.html#railway">
+                    <div class="img">
+                        <img src="images/train.png">
+                        <h1>
+                            <center>Train</center>
+                        </h1>
+                    </div>
+                </a>
+            </div>
+            <div class="profile-card">
+                <a href="kyoto-city-bus.html">
+                    <div class="img">
+                        <img src="images/bus.png">
+                        <h1>
+                            <center> Kyoto City Bus</center>
+                        </h1>
+                    </div>
+                </a>
+            </div>
+            <div class="profile-card">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/icoca.jpg">
+                        <h1>
+                            <center> ICOCA Card</center>
+                        </h1>
+                    </div>
+                </a>
+            </div>
+            <div class="profile-card">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/garbage.jpg">
+                        <h1>
+                            <center> Home Garbage</center>
+                        </h1>
+                    </div>
+                </a>
+            </div>
+            <div class="profile-card">
+                <a href="#">
+                    <div class="img">
+                        <img src="images/Foodlogo.png">
+                        <h1>
+                            <center> Daily Needed Goods</center>
+                        </h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- about us section ends -->
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("./header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
