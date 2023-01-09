@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/fushimi1.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Fushimi Inari-taisha</h4>
+            <img src="images/fushimi5.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>This intriguing shrine was dedicated to the god of rice and sake by the Hata clan in the 8th century. As the role of agriculture diminished, deities were enrolled to ensure prosperity in business enterprises. <br><br>
+
+               The magical, seemingly unending path of over 5000 vibrant orange torii gates that wind through the hills behind Fushimi Inari-taisha Shrine makes it one of the most popular shrines in Japan. The walk around the upper precincts is a pleasant day hike. It also makes for a delightfully eerie stroll in the late afternoon and early evening, when the various graveyards and miniature shrines along the path take on a mysterious air.
+                <br><br>
+
+               This shrine, dedicated to the god of rice and sake in the 8th century, also features dozens of statues of foxes. The fox is seen as the messenger of the god of grain foods, Inari, and the stone foxes are often known by the same name. The keys often depicted in the fox mouths are keys to granaries. This shrine is the central location for some 40,000 Inari shrines throughout the entirety of Japan.
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/fushimi2.jpg" alt="">
+                <img src="images/fushimi3.jpg" alt="">
+                <img src="images/fushimi4.jpg" alt="">
+                <img src="images/fushimi5.jpg" alt="">
+                <img src="images/fushimi6.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/QSoZJC8gLJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/Xf7nLAnXxno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.578884873639!2d135.7700876753129!3d34.967162072826284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f57ae59e351%3A0xc7ce0e4298b969a9!2sFushimiinari%20Shrine!5e0!3m2!1sen!2sjp!4v1673239909478!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

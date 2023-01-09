@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/imperial5.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Kyoto Imperial Palace</h4>
+            <img src="images/imperial8.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>The Kyoto Imperial Palace (京都御所, Kyōto Gosho) used to be the residence of Japan's Imperial Family until 1868, when the emperor and capital were moved from Kyoto to Tokyo. It is located in the spacious Kyoto Imperial Park (京都御苑, Kyōto Gyoen), an attractive park in the center of the city that also encompasses the Sento Imperial Palace, which served retired emperors, and a few other attractions..
+                <br><br>
+
+               The current Imperial Palace was reconstructed in 1855 after it had burnt down and moved around town repeatedly over the centuries. The complex is enclosed by long walls and consists of several gates, halls and gardens. The enthronement ceremonies of Emperors Taisho and Showa were still held in the palace's main hall. Tokyo Imperial Palace is now used for enthronement ceremonies.<br><br>
+
+Besides the Imperial Palace and the Sento Palace grounds, a few other historic sites are located within Kyoto Imperial Park, including the Kaninnomiya Mansion, a former residence of court nobles that is open to the public in the park's southwestern corner. Not far away stands a small branch shrine of Miyajima's famous Itsukushima Shrine on a small island of a pond.
+
+The 1300 meter long and 700 meter wide park also serves as recreational space for both tourists and residents, featuring attractive, broad gravel paths, lawns and tree groves. A pretty group of weeping cherry trees stands beside Konoe Pond in the park's northwestern corner and is usually in bloom for two to three weeks from late March to mid April.
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/imperial4.jpg" alt="">
+                <img src="images/imperial1.jpg" alt="">
+                <img src="images/imperial6.jpg" alt="">
+                <img src="images/imperial7.jpg" alt="">
+                <img src="images/imperial2.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/-Ygzbj3b6Bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/hImhmg47ilM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.252465801629!2d135.7595496753159!3d35.025413472805994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108652e05500d%3A0xaaaf9eec1f34bbf5!2sKyoto%20Imperial%20Palace!5e0!3m2!1sen!2sjp!4v1673236300580!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

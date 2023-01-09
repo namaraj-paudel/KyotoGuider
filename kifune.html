@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/kifune.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>kifune shrine</h4>
+            <img src="images/kifune5.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>Kibune is only around thirty minutes from Kyoto City, but it feels like worlds away. If you want to escape the hustle and bustle to experience a bit of tranquility and calm, take the Eizan train north.  The area is filled to the brim with wildlife and seasonal flowers blooming along the river, and the local restaurants and ryokan (traditional inns) serve meals on platforms built over the cool waters. Kibune is also home to the Kifune Shrine, a shrine that worships kami associated with water. Three separate locations make up Kifune Shrine; the main shrine, Yui no Yashiro, and the Okunomiya. Some people choose to take a certain course to make this pilgrimage. First visit the main shrine, then after you finish praying go straight back to the Okunomiya, then lastly drop by the middle shrine, Yui no Yashiro, as you’re heading home.  Not only stunning in the summer, Kifune Shrine is absolutely gorgeous in winter as well. If you can brave the chilly weather, go to Kibune village when it is snowing and the area is covered in a blanket of snow, becoming a dreamy wonderland.
+                <br><br>
+
+              The stone staircase lined with red wooden lanterns and covered by a canopy of maples leading up to Kifune Shrine’s main hall is a famous sight often photographed in all seasons.  This shrine was patronized by the Imperial Court in the Heian Period, and during this time the Imperial Court sent official delegations to the shrine and offered the deities horses as gifts when praying for certain weather; a black horse to ask for rain and a white horse to ask for clear skies. Because of this tradition, there are statues of horses at the shrine to this day.  Near the main hall is a place to buy amulets, as well as a small pool of water to use in fortune telling<br><br>
+
+At Kifune Shrine, a shrine related to prayers for water, you can enjoy some fortune telling using that very medium. The fortune telling sheets of paper are called mizuura mikuji, and you can purchase them at the shrine for a small fee. Simply place the sheet of paper in the small basin of water near the main hall and wait until your fortune appears on the piece of paper, predicting various aspects of your life including love, work, health, and dreams.  With time, the water soaks through the paper and begins to obscure the fortune, so don’t forget to snap a photo!  Even if you don’t speak Japanese, you don’t need to worry.  There is a small QR code on the omikuji paper that can be scanned with a QR code reader application on smartphones.  If you scan this code your phone will pull up a page that offers translations of the fortune (in English, Chinese, Simplified Chinese, and Korean), as well as an audio recording of the fortune!
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/kifune1.jpg" alt="">
+                <img src="images/kifune2.jpg" alt="">
+                <img src="images/kifune3.jpg" alt="">
+                <img src="images/kifune4.jpg" alt="">
+                <img src="images/kifune5.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/HJt3gBzlaSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eCNLQGsIoAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.3995017210755!2d135.76031397532049!3d35.121702772773034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a608f30a9109%3A0x1d021ae4b564548b!2sKifune-jinja%20Shrine!5e0!3m2!1sen!2sjp!4v1673237501339!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

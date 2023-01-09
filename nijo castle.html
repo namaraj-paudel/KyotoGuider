@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/nijo2.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Nijō Castle</h4>
+            <img src="images/nijo1.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>Nijō Castle (二条城, Nijō-jō) is a flatland castle in Kyoto, Japan. The castle consists of two concentric rings (Kuruwa) of fortifications, the Ninomaru Palace, the ruins of the Honmaru Palace, various support buildings and several gardens. The surface area of the castle is 275,000 square metres (27.5 ha; 68 acres), of which 8,000 square metres (86,000 sq ft) is occupied by buildings.
+                <br><br>
+
+             Nijo Castle (二条城, Nijōjō) was built in 1603 as the Kyoto residence of Tokugawa Ieyasu, the first shogun of the Edo Period (1603-1867). His grandson Iemitsu completed the castle's palace buildings 23 years later and further expanded the castle by adding a five story castle keep.<br><br>
+
+After the Tokugawa Shogunate fell in 1867, Nijo Castle was used as an imperial palace for a while before being donated to the city and opened up to the public as a historic site. Its palace buildings are arguably the best surviving examples of castle palace architecture of Japan's feudal era, and the castle was designated a UNESCO world heritage site in 1994.
+
+Nijo Castle can be divided into three areas: the Honmaru (main circle of defense), the Ninomaru (secondary circle of defense) and some gardens around them. The entire castle grounds and the Honmaru are surrounded by stone walls and moats.
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/nijo3.jpg" alt="">
+                <img src="images/nijo4.jpg" alt="">
+                <img src="images/nijo5.jpg" alt="">
+                <img src="images/nijo6.jpg" alt="">
+                <img src="images/nijo7.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/LGlw0ZRVBic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/xmKQnGBTxyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.69937248767!2d135.74345439678953!3d35.0142299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600107d40a2b9b0b%3A0x106b8759906a2f2f!2sNij%C5%8D%20Castle!5e0!3m2!1sen!2sjp!4v1673240997065!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

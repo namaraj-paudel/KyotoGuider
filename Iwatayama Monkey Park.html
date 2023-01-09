@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/monkey6.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Arashiyama Monkey Park Iwatayama</h4>
+            <img src="images/monkey1.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>The park is located in Arashiyama, one of Kyoto’s busiest tourist areas, and is easily accessible by train. It boasts about 120 snow monkeys, which are also called Japanese Macaque. They are native to Japan, and, yes, these are the type of monkeys seen in iconic photos in which they’re bathing at hot springs in winter.
+                <br><br>
+
+           Entering the park, I immediately spotted a monkey scrambling in the tall grass just meters away. I’d not seen this animal anywhere but a zoo. At first, being so close was a bit nerve-wracking, but it was also refreshing to see these creatures free from a glass cage. The active ones would swing from tree branches and run up the mountainside. The hike itself is fairly easy and takes about 30 minutes.<br><br>
+
+Following the path, at the top is a view of the city, mountains, and river, with a bright blue sky draped over it all on a sunny day. After fawning over the view (Japan really hypes up -- and does not disappoint -- on that “view”), there is a chance to feed the monkeys.
+
+They're eager to gobble up apple chunks tourists can buy and offer through the safety of an enclosed area. They grab the food right out of your hand, as they hang on the outside of the caged-in window area.
+
+A visit will take about 1-2 hours, and visitors can enter from 9 am–4:30 pm. /5 pm. from 15th March to 30 September. During the Autumn and Winter periods, the park is open from 9 am–4 pm, while the Mountaintop is open from 9 am–4:30 pm
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/monkey2.jpg" alt="">
+                <img src="images/monkey3.jpg" alt="">
+                <img src="images/monkey4.jpg" alt="">
+                <img src="images/monkey5.jpg" alt="">
+                <img src="images/monkey6.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/UkDIGxl7XlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/zqcKcYMjHkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.812639217526!2d135.6740495753152!3d35.01139497281094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600100ab6efb49bd%3A0x1b3493b0430734b2!2sArashiyama%20Monkey%20Park%20Iwatayama!5e0!3m2!1sen!2sjp!4v1673241663779!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

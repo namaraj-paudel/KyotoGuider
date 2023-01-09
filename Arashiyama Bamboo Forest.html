@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/details.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/grove.jpg">
+        <div class="content">
+            <h3>Discover your best place in Kyoto</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="details">
+        <div class="container">
+            <h4>Arashiyama Bamboo Grove</h4>
+            <img src="images/bamboo.jpg" alt="Kiyomizu-dera Temple">
+
+            <p>Arashiyama is the second-most important sightseeing district in Kyoto. It’s filled with temples and shrines, but the star attraction is the famed Arashiyama Bamboo Grove. <br><br>
+
+                Arashiyama is in the far west of Kyoto, tucked along the base of the Arashiyama Mountains (meaning “Storm Mountains”). It’s a fair distance from the center of Kyoto: whether you go by train, bus, bicycle or taxi, you’re generally looking at about a 30-minute trip. Still, it’s worth it for the number of great sights here.
+                <br><br>
+
+                From the JR Saga-Arashiyama Station, you may take a bus, which departs approximately every seven minutes. Alternatively, you may walk about 15 minutes to the bamboo grove. Keep in mind that trains departing from the Hankyu Arashiyama Station are not covered by the JR Pass.Next to the station is the red-brick building of Saga Torokko Station, from where you can take the Sagano Scenic Railway. This romantic train passes a gorge offering a lovely view along the Hozu River.
+
+
+            </p>
+
+            <p>Address: <i>1 Chome-294 Kiyomizu, Higashiyama Ward, Kyoto, 605-0862</i></p>
+            <p>Official Site: <a href="https://www.kiyomizudera.or.jp/en/">www.kiyomizudera.or.jp/en/</a></p>
+
+            <h4>Gallery</h4>
+            <div class="gallery">
+                <img src="images/bamboo1.jpg" alt="">
+                <img src="images/bamboo2.jpg" alt="">
+                <img src="images/bamboo3.jpg" alt="">
+                <img src="images/bamboo5.jpg" alt="">
+                <img src="images/bamboo6.jpg" alt="">
+            </div>
+
+            <br><br>
+            <h4>Videos</h4>
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JpEjSABgaYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rSV1TzOlg2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+
+            <h4>Google Map</h4>
+            <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104562.84901687312!2d135.5193487972656!3d35.01699139999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001abb47c24c983%3A0xece34a99ed7169d2!2sArashiyama%20Bamboo%20Forest!5e0!3m2!1sen!2sjp!4v1673235015231!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
