@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/garbage.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image2.jpg">
+        <div class="content">
+            <h3>Visit your favourite places</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="onoff">
+        <div class="container">
+            <div class="heading">
+                <center> MANAGE HOME GARBAGE </center>
+            </div>
+            <!-- Flat Fare start -->
+            <div class="flat-fare">
+                <div class="card">
+                    <div class="detail">
+                        <h1>Overview</h1>
+                        <p>When foreign residents move to Japan, they often find the garbage disposal system difficult
+                            to understand. In other countries, waste is usually divided into three main types:
+                            recyclable, domestic, and vegetation. But in Japan, rubbish is split into even smaller
+                            subcategories, such as newspapers, periodicals, and plastic, and must be discarded on
+                            specific days. Depending on the area, you may be required to use special bags for your
+                            trash. To make sure you are following the correct disposal rules, you should consult a
+                            pamphlet from your local municipality, which are often available in English and Chinese, or
+                            ask someone living in the same area. Knowing the rules of garbage disposal in your
+                            neighborhood is essential.</p>
+                    </div>
+                    <div>
+                        <img src="images/garbage_cover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <p>While particular garbage separation rules are implemented by each municipality, garbage is
+                            divided into four main categories in Japan: burnable, non-burnable, recyclable, and
+                            oversized.</p>
+                        <br>
+                        <h1>Main Categories of Garbage</h1>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Burnable Garbage</th>
+                                    <td>Kitchen waste, paper scraps, clothing, etc.</td>
+                                </tr>
+                                <tr>
+                                    <th>Non-Burnable Garbage</th>
+                                    <td>Metal, glass, ceramics and pottery, etc.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Recyclable Garbage </th>
+                                    <td>Plastic bottles, container jars, cans, newspapers, etc.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Oversized Garbage</th>
+                                    <td>Large furniture, etc.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <p>Most household garbage, including kitchen waste and paper scraps, is classified as burnable
+                            garbage.</p> <br>
+
+                        <p>Non-burnable garbage refers to non-recyclable waste, like metal and glass items. A frying pan
+                            or glass cup would fall into this category.</p><br>
+
+                        <p>Plastic bottles, container jars, and cans are classified as recyclable garbage.</p><br>
+
+                        <p>Lastly, oversized garbage includes large furniture and home appliances. According to the Home
+                            Appliance Recycling Law, air conditioners, TVs, refrigerators, and washing machines are not
+                            collected in local municipalities.</p> <br>
+
+                        <p>Residents must pay a recycling fee of between 1,000 and 6,000 yen to dispose of their
+                            oversized garbage. You can have it collected by shop staff where the item was purchased, or
+                            take the item to a designated pick-up location yourself.</p> <br>
+
+                        <p>Recyclable garbage is further divided into four subcategories. Let's take a look at how
+                            recyclable garbage is separated before disposal.</p> <br>
+
+                        <br>
+
+                        <h1>How to Separate Recyclable Garbage</h1>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Bottles</th>
+                                    <td>Glass beverage bottles, glass bottles that contained food, cosmetics, or
+                                        medicine</td>
+                                </tr>
+                                <tr>
+                                    <th>Cans</th>
+                                    <td>Beverage cans and food tins (aluminum and steel)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Plastic Bottles </th>
+                                    <td>Plastic beverage bottles, alcohol (sake), mirin, and soy sauce plastic bottles
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Aerosol Spray Cans</th>
+                                    <td>Spray cans, gas cartridges, and batteries
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1>Useful Video</h1> <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CrwSVeDkqtg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <!-- code  -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- Flat Fare end -->
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("./header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
