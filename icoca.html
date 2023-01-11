@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icoca.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image2.jpg">
+        <div class="content">
+            <h3>Visit your favourite places</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="onoff">
+        <div class="container">
+            <div class="heading">
+                <center> USES OF IC CARDS </center>
+            </div>
+            <!-- Flat Fare start -->
+            <div class="flat-fare">
+                <div class="card">
+                    <div class="detail">
+                        <h1>How to use IC cards?</h1>
+                        <p>When going through the automatic ticket gates, simply place your card on the card reader for
+                            a second, rather than insert it into the ticket slot. Your fare will be automatically taken
+                            out when you depart from the station. On buses, the card reader is located at the entrance
+                            and/or exit. It is not permissible to use the same card for multiple travelers
+                            simultaneously.</p>
+                    </div>
+                    <div>
+                        <img src="images/ic.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <h1>Where to get an IC card?</h1>
+                        <p>You can buy IC cards from the ticket machines and ticket booths of the railway company that
+                            issued them. An initial cost of 500 yen (which is refundable) plus an additional 1500 yen
+                            needs to be paid to get the card activated.</p>
+                    </div>
+                    <div>
+                        <img src="images/ic_machine.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <h1>How to recharge IC cards?</h1>
+                        <p>IC cards can be recharged at ticket machines and special re-charging machines found in
+                            strategically meaningful locations. You can recharged IC cards from the ticket machines and
+                            ticket
+                            booths of the railway company that issued them. </p>
+                    </div>
+                    <div>
+                        <img src="images/ic_machine2.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <h1>How to check the current balance?
+                        </h1>
+                        <p>Whenever you go through a ticket gate or make a purchase at a store, the current credit
+                            balance will be shown on a small display. Additionally, you can check the balance and a
+                            usage history at ticket machines.</p>
+                    </div>
+                    <div>
+                        <!-- code here -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <h1>How to get back the 500 yen refundable deposit?
+                        </h1>
+                        <p>To get your 500 yen deposit back, you must take your card to the ticket counter of the
+                            operator who issued it. If you have unused credit, you can also get a refund; though, most
+                            companies will take out a 220 yen handling fee from the remaining amount.</p>
+                    </div>
+                    <div>
+                        <!-- code here -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="detail">
+                        <h1>Is there an expiry date?
+                        </h1>
+                        <p>Cards will no longer be valid if they haven't been utilized in a decade.</p>
+                    </div>
+                    <div>
+                        <!-- code here -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="detail">
+                        <h1>For more information:
+                        </h1>
+                        <p>Please <a href="https://www.westjr.co.jp/global/en/howto/guide/movie04.html" target="_blank"> cick here </a> for the photo guide. </p>
+                    </div>
+                    <div>
+                        <!-- code here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Flat Fare end -->
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("./header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
