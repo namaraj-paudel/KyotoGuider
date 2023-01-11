@@ -1,0 +1,95 @@
+.cover_image {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .cover_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .cover_image .content {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .onoff .container {
+    padding-top: 10px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+  }
+
+  .onoff .heading {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .onoff .heading div {
+    padding-left: 10px;
+  }
+
+  .onoff .container .flat-fare{
+    height: auto;
+  }
+
+  .onoff .container .flat-fare center{
+    padding-top: 20px;
+    font-size: 25px;
+    font-style: oblique;
+  } 
+  .onoff .container .flat-fare .card {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 20rem;
+    margin-top: 10px;
+    gap: 15px;
+    padding: 10px 20px;
+}
+ .onoff .container .flat-fare .card .detail h1 {
+  font-size: 20px;
+}
+
+.onoff .container .flat-fare .card img {
+  height: 400px;
+  width: 500px;
+}
+.onoff .container .flat-fare .card .detail .tips{
+  width: 100%;
+  border:2px solid black;
+}
+
+.onoff .container .flat-fare .card .detail .tips h1{
+    font-size: 20px;
+    color: white;
+    font-style: normal;
+    background-color: var(--primary-color);
+}
+
+.onoff .container .flat-fare .card .detail p{
+  font-size: 15px;
+}
+
+.onoff .container .flat-fare .card .detail .tips p{
+  font-size: 20px;
+}

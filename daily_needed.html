@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/daily_needed.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image2.jpg">
+        <div class="content">
+            <h3>Visit your favourite places</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="onoff">
+        <div class="container">
+            <div class="heading">
+                <center> HOW TO BUY DAILY NEEDED FOODS</center>
+            </div>
+            <!-- Flat Fare start -->
+            <div class="flat-fare">
+                <div class="card">
+                    <div class="detail">
+                        <h1>1. Visit a Supermarket:</h1>
+                        <p>&emsp;&emsp;Supermarkets are the most popular places in Japan to buy daily food items. Many
+                            supermarkets
+                            offer a wide selection of fresh produce, meats, dairy products, fish, and other food items.
+                        </p> <br>
+
+                        <h1>2. Visit a Convenience Store:</h1>
+                        <p>&emsp;&emsp;Convenience stores (or “conbini”) are a great place to buy food for daily meals. Most
+                            convenience stores offer a variety of ready-made meals, snacks, and beverages.
+                        </p> <br>
+
+
+                        <h1>3. Visit a Local Grocery Store:</h1>
+                        <p>&emsp;&emsp;Local grocery stores are a great place to find fresh and affordable produce, meats, and
+                            other food items. Many local stores offer a wide range of local and imported items.
+                        </p> <br>
+
+
+                        <h1>4. Visit a Farmers Market: </h1>
+                        <p>&emsp;&emsp;Farmers markets are a great place to find fresh and locally produced food items. Many
+                            farmers markets offer a variety of seasonal produce, meats, and other food items.
+                        </p> <br>
+
+
+                        <h1>5. Visit a Department Store: </h1>
+                        <p>&emsp;&emsp;Department stores are a great place to find imported food items. Many department stores
+                            have a food court with a variety of food stalls and restaurants.
+                        </p> <br>
+
+
+                        <h1>6. Look for stores that offer discounts and promotions:</h1>
+                        <p>&emsp;&emsp;Many stores in Kyoto offer discounts and promotions for international students. Ask around
+                            for stores that offer discounts for international students or search online for stores that
+                            offer special discounts.</p> <br>
+
+
+                        <h1>7. Join a student discount program:</h1>
+                        <p>&emsp;&emsp;Many stores in Kyoto offer student discount programs that offer special discounts on food and
+                            other items. Ask around or search online for stores with student discounts.</p> <br>
+
+
+                        <h1>8. Shop at local markets:</h1>
+                        <p>&emsp;&emsp;Local markets are usually much cheaper than supermarkets and usually carry fresh, local
+                            produce. Shopping at local markets can help you save money while still getting the food you
+                            need.</p> <br>
+
+
+                        <h1>9. Buy in bulk:</h1>
+                        <p>&emsp;&emsp;Buying food in bulk is usually much cheaper than buying smaller amounts. Look for stores that
+                            offer bulk discounts or search online for stores that offer special discounts on bulk
+                            purchases.</p> <br>
+
+
+                        <h1>10. Shop at discount stores: </h1>
+                        <p>&emsp;&emsp;Discount stores are usually much cheaper than regular supermarkets and offer a wide range of
+                            food items at discounted prices. Search online for discount stores in Kyoto and plan your
+                            shopping trips accordingly.</p> <br>
+
+                    </div>
+                    <div>
+                        <img src="images/Food.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Flat Fare end -->
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("./header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
