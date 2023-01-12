@@ -209,7 +209,7 @@ header .icons i:hover {
 }
 
 .railway .container .card {
-  flex: 1 1 21rem;
+  flex: 1 1 20rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -242,100 +242,6 @@ header .icons i:hover {
   color: #fff;
   text-align: center;
 }
-
-/* 
-.packages .container {
-  display: flex;
-  margin-top: 1%;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.packages .container .card {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.packages .container .card img {
-  height: 25rem;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.packages .container .card img:hover {
-  transform: scale(1.1);
-}
-
-.packages .container .card .location {
-  position: absolute;
-  top: 48%;
-  width: 100%;
-}
-
-.packages .container .card .location .location-control {
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-}
-
-.packages .container .card .location-control i {
-  font-size: 15px;
-  color: #fff;
-}
-
-.packages .container .card .location-control i span {
-  font-size: 17px;
-  font-weight: 100;
-}
-
-.packages .container .card .content {
-  padding: 2rem;
-}
-
-.packages .container .card .content .name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.packages .container .card .content .name h3 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.packages .container .card .content .name h3 i {
-  color: var(--secondary-color);
-}
-
-.packages .container .card .content .detail p {
-  font-size: 1.7rem;
-  color: #666;
-  padding: 1rem 0;
-  text-transform: none;
-}
-
-.packages .container .card .content .name .stars i {
-  font-size: 1.7rem;
-  color: var(--secondary-color);
-}
-
-.packages .container .card .content .detail .price {
-  font-size: 2rem;
-  color: #333;
-  padding-top: 0rem;
-}
-
-.packages .container .card .content .detail .price span {
-  color: #666;
-  font-size: 1.5rem;
-  text-decoration: line-through;
-  margin-left: 10px;
-} */
-
 
 .services .container {
   margin-top: 1%;
