@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyoto Guider is the online tourism website.">
+    <meta name="keywords" content="Japan, Kyoto, Travel, Tour, Visit, Living">
+    <meta name="author" content="Group 6">
+    <title>Kyoto Guider | Comfortable Living </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/videos.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header>
+        <!-- loaded from ajax -->
+    </header>
+    <!-- header section end  -->
+
+    <!-- banner section starts  -->
+    <div class="cover_image">
+        <img src="images/banner_image2.jpg">
+        <div class="content">
+            <h3>Visit your favourite places</h3>
+        </div>
+    </div>
+    <!-- banner section ends -->
+
+    <section class="onoff">
+        <div class="container">
+            <div class="heading">
+                <center>How To Search Destination on Google Map </center>
+            </div>
+            <div class="map">
+                <video src="videos/google_map.mp4" width="100%" height="500px" controls></video>
+            </div>
+            <div class="heading">
+                <center>How To Use IC Card </center>
+            </div>
+            <div class="map">
+                <video src="videos/use_IC_card.mp4" width="100%" height="500px" controls></video>
+            </div>
+
+            <div class="heading">
+                <center>How To Use Train  </center>
+            </div>
+            <div class="map">
+                <video src="videos/how_to_use_train.mp4" width="100%" height="500px" controls></video>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer>
+        <!-- loaded from ajax -->
+    </footer>
+    <!-- footer section end  -->
+
+    <script>
+        fetch("./header.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
