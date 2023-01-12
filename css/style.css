@@ -499,7 +499,7 @@ header .icons i:hover {
 .footer .container .card a {
   display: block;
   font-size: 1.5rem;
-  padding: 0.7rem 0;
+  padding: 2px 0;
   color: #eee;
   transition: 0.25 ease-in;
 }
